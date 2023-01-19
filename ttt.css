@@ -1,0 +1,91 @@
+Screen {
+    align: center bottom;
+}
+
+#board{
+    layout: grid;
+    grid-size: 3 5;
+    grid-gutter: 0;
+    grid-columns: 1fr;
+    grid-rows: 1fr 1fr 1fr;
+    width: 30;
+    height: 20;
+    content-align: center middle;
+
+}
+
+#b11, #b12, #b13, #b21, #b22, #b23, #b31, #b32, #b33  {
+    column-span: 1;
+    row-span: 1;
+    padding: 0;
+    width: 10;
+    height: 10;
+    margin: 0;
+    padding: 0;
+    border: none;
+    content-align: center middle;
+}
+Display {
+    layout: horizontal;
+    column-span: 3;
+    row-span: 1;
+}
+
+#display {
+    column-span: 2;
+    min-width: 20;
+    height: 100%;
+    border-bottom: solid white;
+
+}
+
+#reset{
+    column-span: 1;
+    max-width: 10;
+    height: 100%;
+    border-bottom: solid white;
+}
+#scoreboard_X {
+    column-span: 1;
+    row-span: 1;
+    width: 100%;
+    height: 100%;
+    content-align: center middle;
+    border: none;
+    border-top: solid white;
+}
+
+#scoreboard_O {
+    column-span: 1;
+    row-span: 1;
+    width: 100%;
+    height: 100%;
+    content-align: center middle;
+    border: none;
+    border-top: solid white;
+}
+
+#restart {
+    column-span: 1;
+    row-span: 1;
+    width: 100%;
+    height: 100%;
+    content-align: center middle;
+    border: none;
+    border-top: solid white;
+}
+
+
+Header {
+    text-style: bold;
+    text-align: center;
+}
+
+.normal {
+    border: none;
+    background: red 0%;
+}
+.win {
+    opacity: 10%;
+}
+
